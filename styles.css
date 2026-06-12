@@ -1,0 +1,125 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+/* --- Rules Button & Modal Styling --- */
+
+#rules-btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  background-color: #FEF2BF;
+  color: #011F3F;
+  border: 4px solid black;
+  padding: 10px 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#rules-btn:hover {
+  background-color: white;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.modal-content {
+  background-color: #011F3F;
+  color: #FEF2BF;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.75rem;
+  line-height: 1.8;
+  text-align: left;
+  margin: 10% auto; 
+  padding: 30px;
+  border: 5px solid #FEF2BF;
+  width: 60%; 
+  border-radius: 15px;
+  position: relative;
+}
+
+.modal-content h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.modal-content ol {
+  padding-left: 20px;
+}
+
+.modal-content li {
+  margin-bottom: 15px;
+}
+
+.close-btn {
+  color: #FEF2BF;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: red;
+}
