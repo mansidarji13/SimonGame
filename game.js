@@ -8,7 +8,7 @@ var started = false;
 var level = 0;
 
 
-$(document).on("keypress touchend",function() {
+$(document).on("click touchstart",function() {
     if(!started){
 
         $("#level-title").text("Level " + level);
@@ -18,7 +18,7 @@ $(document).on("keypress touchend",function() {
 });
 
 
-$(".btn").on("click touchend",function(e){
+$(".btn").on("click",function(e){
 
     e.preventDefault();
     var userChosenColour = $(this).attr("id");
@@ -52,11 +52,9 @@ function checkAnswer(currentLevel) {
         $("body").addClass("game-over");
         setTimeout(function() {
             $("body").removeClass("game-over");
+            $("#level-title").text("Game Over! Tap Anywhere or Press Any Key to Restart");
+            startOver();
         }, 2000);
-
-        $("#level-title").text("Game Over! Tap Anywhere or Press Any Key to Restart");
-
-        startOver();
     }
 }
 
